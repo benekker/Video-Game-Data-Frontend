@@ -19,9 +19,12 @@ const ConsoleGraph = ({games}) => {
 
         let allGamesForPlatform = gamesByYear.filter(game => game.platform == platform)
 
+        let sum = 0
+        allGamesForPlatform.forEach((game) => {
+          sum = sum + game.globalsales
+        });
 
-
-        return [platform, 10]
+        return [platform, sum]
       });
 
 
