@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <ConsoleGraph games = {games} />
-      <GenreGraph />
+      <GenreGraph games = {games}/>
     </div>
   );
 }

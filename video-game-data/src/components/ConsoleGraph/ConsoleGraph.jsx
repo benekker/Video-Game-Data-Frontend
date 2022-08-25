@@ -36,7 +36,7 @@ const ConsoleGraph = ({games}) => {
     return data;
     }
     const options = {
-      title: "Number of game copies sold globally since 2013",
+      title: "Number of game copies sold globally since 2013 in millions",
     };
     return (
       <Chart

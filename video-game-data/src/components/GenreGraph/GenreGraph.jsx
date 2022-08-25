@@ -1,16 +1,28 @@
 import React from 'react'
 import { Chart } from "react-google-charts";
 
-const GenreGraph = () => {
-     const data = [
+const GenreGraph = ({games}) => {
+
+    function generateData(){
+
+      let gamesByGenre = games.filter(game => game.genre.includes('Shooter'))
+
+        console.log(gamesByGenre)
+
+      let shooterGamesArrays = gamesByGenre.map(game => {
+
+        return [game.name, game.globalsales]
+      })
+
+
+        const data = [
         ["Game", "Units sold in millions"],
-        ["Duck Hunt", 18],
-        ["Call of Duty: Modern Warfare 3", 14.76],
-        ["Call of Duty: Black Ops", 14.64],
-        ["Call of Duty: Black Ops 3", 14.24],
-        ["Call of Duty: Black Ops II", 14.03],
+        ...shooterGamesArrays
+        
       ];
-      
+      return data;
+    }
+     
      const options = {
         title: "Top Selling Shooter Games of All Time",
         chartArea: { width: "50%" },
@@ -28,7 +40,7 @@ const GenreGraph = () => {
       chartType="BarChart"
       width={"100%"}
       height={"400px"}
-      data={data}
+      data={generateData()}
       options={options}
     />
   );
