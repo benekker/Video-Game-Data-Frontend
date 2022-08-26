@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SearchResults from '../SearchResults/SearchResults';
+import './Searchbar.css'
 
 const Searchbar = ({games}) => {
 
