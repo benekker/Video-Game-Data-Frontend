@@ -14,11 +14,9 @@ const Searchbar = ({games}) => {
 
   return (
     <div>
-        <form onSubmit={handleSearch}>
-            <input className ='search-bar' type="text" placeholder="search..."  value={search} onChange={(event) => setSearch(event.target.value)}/>
-            <button className='search-button' type="submit">Search</button>
-        </form>
-        <SearchResults filteredGames = {filteredGames}/>
+      <input className ='search-bar' type="text" placeholder="search..."  value={search} onChange={(event) => setSearch(event.target.value)}/>
+      <button className='search-button' onClick={handleSearch}>Search</button>
+      <SearchResults filteredGames = {filteredGames}/>
     </div>
   )
 }
