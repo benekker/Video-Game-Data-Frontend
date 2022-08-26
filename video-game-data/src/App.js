@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import ConsoleGraph from './components/ConsoleGraph/ConsoleGraph';
 import GenreGraph from './components/GenreGraph/GenreGraph';
+import Searchbar from './components/Searchbar/Searchbar';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       <ConsoleGraph games = {games} />
       <GenreGraph games = {games}/>
+      <Searchbar games = {games}/>
     </div>
   );
 }

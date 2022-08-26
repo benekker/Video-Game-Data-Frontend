@@ -8,8 +8,9 @@ const GenreGraph = ({games}) => {
       let gamesByGenre = games.filter(game => game.genre.includes('Shooter'))
 
         console.log(gamesByGenre)
+      let topGames = gamesByGenre.filter(game => game.globalsales >= 12.14)
 
-      let shooterGamesArrays = gamesByGenre.map(game => {
+      let shooterGamesArrays = topGames.map(game => {
 
         return [game.name, game.globalsales]
       })
@@ -24,7 +25,7 @@ const GenreGraph = ({games}) => {
     }
      
      const options = {
-        title: "Top Selling Shooter Games of All Time",
+        title: "Top 10 Shooter Games of All Time",
         chartArea: { width: "50%" },
         colors: ["#582fa3"],
         hAxis: {
