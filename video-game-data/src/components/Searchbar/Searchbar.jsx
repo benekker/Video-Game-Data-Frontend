@@ -15,7 +15,7 @@ const Searchbar = ({games}) => {
 
   return (
     <div>
-      <input className ='search-bar' type="text" placeholder="search..."  value={search} onChange={(event) => setSearch(event.target.value)}/>
+      <input className ='search-bar' type="text" placeholder="search by game title..."  value={search} onChange={(event) => setSearch(event.target.value)}/>
       <button className='search-button' onClick={handleSearch}>Search</button>
       <SearchResults filteredGames = {filteredGames}/>
     </div>

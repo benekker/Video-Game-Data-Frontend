@@ -1,5 +1,6 @@
 import React from 'react'
 import { Chart } from "react-google-charts";
+import './ConsoleGraph.css'
 
 
 
@@ -40,10 +41,11 @@ const ConsoleGraph = ({games}) => {
     };
     return (
       <Chart
+        className='PieChart'
         chartType="PieChart"
         data={generateData()}
         options={options}
-        width={"100%"}
+        width={"80%"}
         height={"400px"}
       />
     )

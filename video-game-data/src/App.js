@@ -4,6 +4,7 @@ import './App.css';
 import ConsoleGraph from './components/ConsoleGraph/ConsoleGraph';
 import GenreGraph from './components/GenreGraph/GenreGraph';
 import Searchbar from './components/Searchbar/Searchbar';
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
@@ -26,9 +27,14 @@ function App() {
 
   return (
     <div className="App">
-      <ConsoleGraph games = {games} />
-      <GenreGraph games = {games}/>
-      <Searchbar games = {games}/>
+      <Navbar id='nav' className='Navbar' />
+      <div id='graphs' className='Graphs'>
+        <ConsoleGraph games = {games} />
+        <GenreGraph games = {games}/>
+      </div>
+      <div id='search'>
+        <Searchbar games = {games}/>
+      </div>
     </div>
   );
 }

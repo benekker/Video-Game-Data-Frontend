@@ -8,3 +8,10 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+th {
+    border: 1px solid black;
+    background-color: #275a8c;
+    text-align: center;
+    color: white;
+}

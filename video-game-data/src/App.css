@@ -1,1 +1,9 @@
+.Graphs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
