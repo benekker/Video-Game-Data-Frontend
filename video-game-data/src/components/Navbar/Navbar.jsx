@@ -15,6 +15,7 @@ const Navbar = (props) => {
         <body>
             <header>
                 <img src={Logo} alt='logo' className='logo'/>
+                <h1>VideoGameAlytics</h1>
                 <nav>
                     <ul className='nav_links'>
                         <li><a href='#search'>Search Games</a></li>

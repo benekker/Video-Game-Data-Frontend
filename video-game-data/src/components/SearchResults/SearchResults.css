@@ -7,11 +7,27 @@ table {
     table-layout: fixed;
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse;
 }
 
 th {
-    border: 1px solid black;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #275a8c;
     text-align: center;
     color: white;
+    font-weight: 500;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
 }

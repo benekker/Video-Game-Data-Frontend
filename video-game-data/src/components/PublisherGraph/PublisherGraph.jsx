@@ -53,10 +53,10 @@ const PublisherGraph = ({games}) => {
             setConsole(selectedConsole)
         }}>
 
-            <option value='' selected>--Please choose a console--</option>
+            <option value='' disabled>Choose a console</option>
             <option value="PS4">PS4</option>
             <option value="PS3">PS3</option>
-            <option value="PS2">PS2</option>
+            <option value="PS2" selected>PS2</option>
             <option value="X360">Xbox360</option>
             <option value="Wii">Wii</option>
             <option value="DS">Nintendo DS</option>
