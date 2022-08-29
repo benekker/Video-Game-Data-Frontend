@@ -5,10 +5,10 @@ const GenreGraph = ({games}) => {
 
     function generateData(){
 
-      let gamesByGenre = games.filter(game => game.genre.includes('Shooter'))
+      let gamesByGenre = games.filter(game => game.genre.includes('Racing'))
 
         console.log(gamesByGenre)
-      let topGames = gamesByGenre.filter(game => game.globalsales >= 12.14)
+      let topGames = gamesByGenre.filter(game => game.globalsales >= 8)
 
       let shooterGamesArrays = topGames.map(game => {
 
@@ -17,7 +17,7 @@ const GenreGraph = ({games}) => {
 
 
         const data = [
-        ["Game", "Units sold in millions"],
+        ["Game", "Units Sold in Millions"],
         ...shooterGamesArrays
         
       ];
@@ -25,7 +25,7 @@ const GenreGraph = ({games}) => {
     }
      
      const options = {
-        title: "Top 10 Shooter Games of All Time",
+        title: "Top 10 Racing Games of All Time",
         chartArea: { width: "50%" },
         colors: ["#041d36"],
         hAxis: {
@@ -33,13 +33,13 @@ const GenreGraph = ({games}) => {
           minValue: 0,
         },
         vAxis: {
-          title: "Game Title",
+          
         },
       };
   return (
     <Chart
       chartType="BarChart"
-      width={"82%"}
+      width={"80%"}
       height={"400px"}
       data={generateData()}
       options={options}

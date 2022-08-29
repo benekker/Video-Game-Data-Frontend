@@ -22,8 +22,8 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 30px 5%;
-    border-bottom: 1px solid black;
-    background-image: linear-gradient(to bottom right, #8fabc7,#275a8c);
+    border-bottom: 2px solid black;
+    background-color:#275a8c;
     height: 100px;
 }
 
@@ -47,8 +47,13 @@ header {
 .logo {
     height: 80px;
     width: 80px;
+    margin-right: 10px;
 }
 
+.Title {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+}
 
 
 
