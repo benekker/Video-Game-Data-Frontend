@@ -5,6 +5,7 @@ import ConsoleGraph from './components/ConsoleGraph/ConsoleGraph';
 import GenreGraph from './components/GenreGraph/GenreGraph';
 import Searchbar from './components/Searchbar/Searchbar';
 import Navbar from './components/Navbar/Navbar';
+import PublisherGraph from './components/PublisherGraph/PublisherGraph';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <div id='graphs' className='Graphs'>
         <ConsoleGraph games = {games} />
         <GenreGraph games = {games}/>
+        <PublisherGraph games = {games}/>
       </div>
       <div id='search'>
         <Searchbar games = {games}/>

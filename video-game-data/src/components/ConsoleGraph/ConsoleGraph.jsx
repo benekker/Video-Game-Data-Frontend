@@ -18,7 +18,7 @@ const ConsoleGraph = ({games}) => {
 
       let platformArrays = distinctPlatforms.map(platform => {
 
-        let allGamesForPlatform = gamesByYear.filter(game => game.platform == platform)
+        let allGamesForPlatform = gamesByYear.filter(game => game.platform === platform)
 
         let sum = 0
         allGamesForPlatform.forEach((game) => {
@@ -37,7 +37,8 @@ const ConsoleGraph = ({games}) => {
     return data;
     }
     const options = {
-      title: "Number of game copies sold globally since 2013 in millions",
+      title: "Number of Game Copies Sold Globally Since 2013 in Millions",
+      is3D: true
     };
     return (
       <Chart

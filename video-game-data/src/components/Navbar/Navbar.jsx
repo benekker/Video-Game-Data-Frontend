@@ -5,7 +5,6 @@ import Logo from './Assets/gamecontroller.png'
 
 const Navbar = (props) => {
     return(
-    
         <html lang="en">
         <head>
             <meta charset="UTF-8" />

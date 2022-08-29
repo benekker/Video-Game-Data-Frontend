@@ -27,7 +27,7 @@ const GenreGraph = ({games}) => {
      const options = {
         title: "Top 10 Shooter Games of All Time",
         chartArea: { width: "50%" },
-        colors: ["#582fa3"],
+        colors: ["#041d36"],
         hAxis: {
           title: "Units Sold in Millions",
           minValue: 0,
