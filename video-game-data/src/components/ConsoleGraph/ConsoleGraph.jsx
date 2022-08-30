@@ -37,7 +37,7 @@ const ConsoleGraph = ({games}) => {
     return data;
     }
     const options = {
-      title: "Number of Game Copies Sold Globally Since 2013 in Millions",
+      title: "Number of Units Sold Globally Since 2013 in Millions",
       is3D: true
     };
     return (
@@ -46,7 +46,7 @@ const ConsoleGraph = ({games}) => {
         chartType="PieChart"
         data={generateData()}
         options={options}
-        width={"80%"}
+        width={"85%"}
         height={"400px"}
       />
     )

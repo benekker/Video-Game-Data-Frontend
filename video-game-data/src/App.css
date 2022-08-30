@@ -4,10 +4,16 @@
     flex-direction: row;
     padding-top: 15px;
     padding-bottom: 15px;
+    align-content: center;
+    
     
     
     
 }
 
+.Navbar{
+    position: fixed;
+    top: 0;
 
+}
 

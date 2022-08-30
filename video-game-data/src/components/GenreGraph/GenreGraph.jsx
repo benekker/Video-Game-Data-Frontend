@@ -39,7 +39,7 @@ const GenreGraph = ({games}) => {
   return (
     <Chart
       chartType="BarChart"
-      width={"80%"}
+      width={"85%"}
       height={"400px"}
       data={generateData()}
       options={options}

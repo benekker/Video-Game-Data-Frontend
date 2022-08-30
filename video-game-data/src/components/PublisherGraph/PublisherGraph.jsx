@@ -67,7 +67,7 @@ const PublisherGraph = ({games}) => {
           chartType="PieChart"
           data={generateData()}
           options={options}
-          width={"80%"}
+          width={"85%"}
           height={"400px"}
         />
          </>
